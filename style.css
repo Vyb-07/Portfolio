@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+}
+body {
+    font-family: "Inter";
+    transition: 0.5s all ease-out;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "Konstant";
+    src: url("./assets/Konstant.otf");
+}
+
+.navbar {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.nav-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+li {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Outfit";
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.reachme-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    /* background-color: #000; */
+    /* color: #000; */
+    border: 2px solid #000;
+    border-radius: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reachme-btn:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+.hero-txt {
+    font-family: "Konstant";
+    font-size: 2.5rem;
+    text-align: center;
+}
+p {
+     text-align: center;
+     font-family: "Outfit";
+     margin: 1rem 0;
+}
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 18rem;
+}
+.socials-link {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+i {
+    cursor: pointer;
+}
+.hero-img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+    animation: blobAnimation 5s infinite ease-in-out;
+}
+svg {
+    height: 550px;
+    width: 550px;
+    position: absolute;
+    margin-top: 10rem;
+}
+  @keyframes blobAnimation {
+    0% {
+      transform: translateY(-5%);
+    }
+    50% {
+      transform: translateY(-2%);
+    }
+    100% {
+      transform: translateY(-5%);
+    }
+}
+#darkmode {
+    cursor: pointer;
+}
+#services {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    gap: 4rem;
+}
+.service-txt {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 16rem;
+    text-transform: uppercase;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+    margin-top: 16rem;
+}
+.my-i {
+    text-align: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    padding: 50px 80px;
+    border-radius: 16px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.card-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 2rem;
+  /* gap: 1rem; */
+}
+.foo-text {
+    font-size: 1.5rem;
+}
+.foo-text-btn {
+    text-decoration: underline;
+    cursor: pointer;
+} 
+
+@media (max-width: 800px) {
+    html,body {
+        width: 100%;
+        /* margin: 0 auto; */
+        text-align: center;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .nav-container {
+        display: flex;
+    }
+    .nav-links{
+       gap: 24px;
+    }
+
+    .hero-txt {
+        font-size: 30px;
+        padding: 0 1rem;
+    }
+    p {
+        font-size: 12px;
+    }
+    .socials-link {
+        left: 1.5rem;
+    }
+    .hero-container {
+        /* width: 100%; */
+        overflow-x: hidden;
+        overflow: hidden;
+        /* margin: 0 a; */
+        margin-left: 2rem;
+    }
+
+    #services {
+        width: 100%;
+        margin-top: 16rem;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .service-txt {
+        top: 5rem;
+        padding: 4rem 0;
+    }
+    .card {
+        padding: 40px 55px;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+    #footer {
+        /* margin-top: 2rem; */
+        bottom: 1rem;
+    }
+    /* img {
+        margin-left: 5rem;
+    }
+    svg {
+        margin-left: 5rem;
+    } */
+}

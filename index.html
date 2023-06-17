@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/275c8ae050.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/v.png" type="image/x-icon">
+    <title>Vybhav Gudali - Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                V.
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <i class="fa-solid fa-moon fa-lg" id="darkmode" style="color: #000;"></i>
+                </li>
+                <li class="reachme-btn" onclick={redirectToGmail()}>Say Hello</li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section class="hero-container">
+        <h1 class="hero-txt">
+            Hey, I'm Vybhav Gudali.
+        </h1>
+        <p>welcome to my small and personal slice of the internet.</p>
+
+        <img src="./assets/hero.png" alt="" class="hero-img">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" id="my-svg">
+            <path fill="#D0E2FF" d="M44,-54.2C59,-49.6,74.5,-39.4,75.9,-26.7C77.4,-13.9,64.6,1.5,57.7,17.5C50.7,33.4,49.5,50,40.9,58.8C32.2,67.6,16.1,68.7,3,64.5C-10,60.3,-20.1,50.9,-33,43.5C-45.8,36,-61.5,30.6,-70.3,19.2C-79,7.8,-80.8,-9.5,-74.3,-22.5C-67.8,-35.4,-53,-44,-39.2,-49C-25.5,-54,-12.7,-55.5,0.9,-56.7C14.5,-57.9,28.9,-58.8,44,-54.2Z" transform="translate(100 100)" />
+        </svg>
+
+        <div class="socials-link">
+            <div class="socials-container">
+                <a href="https://www.linkedin.com/in/vaibhavgudali/">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+                <a href="https://www.instagram.com/vyb_07/">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+                <a href="https://github.com/Vyb-07">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                </a>
+            </div>
+        </div> 
+    </section>
+    
+    <h2 class="service-txt">Services I Offer</h2>
+    
+    <section id="services">
+            <div class="card">
+                <div class="card-head">
+                <h2>CODE</h2>
+                <i class="fa-solid fa-code fa-2xl"></i>
+            </div>
+            <p>
+                I turn Caffiene into Code it's My Super Power.
+            </p>
+        </div>
+        
+        <div class="card">
+            <div class="card-head">
+                <h2>CYBER SECURITY</h2>
+                <i class="fa-solid fa-user-secret fa-2xl"></i>
+            </div>
+            <p>
+                Someone with deep Knack in CyberSecurity Domain
+            </p>
+        </div>
+        
+        <div class="card">
+            <div class="card-head">
+                <h2>FRONTEND</h2>
+                <i class="fa-solid fa-pager fa-2xl"></i>
+            </div>
+            <p>
+                A Frontend Wizzard! from design to develop
+            </p>
+        </div>
+    </section>
+
+    <section id="footer">
+      <h3 class="foo-text">REACH ME</h3>
+      <!-- <button class="reachme-btn" onclick={redirectToGmail()}>Say Hello</button> -->
+        <p onclick={redirectToGmail()} class="foo-text-btn">Say Hello!</p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
